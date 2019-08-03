@@ -2,7 +2,7 @@
 
 ## Description
 
-Marketplace dApp built with React.js
+Marketplace dApp built with React.js, Truffle, and Ganache
 
 <!-- **_DEMO:_**
 
