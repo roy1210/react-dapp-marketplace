@@ -47,7 +47,14 @@ class App extends Component {
       this.setState({ marketplace });
       this.setState({ loading: false });
       const productCount = await marketplace.methods.productCount().call();
-      console.log(productCount.toString());
+      this.setState({ productCount });
+      // Load products, i: index#
+      for (let i = 1; i <= productCount; i++) {
+        const product = await marketplace.methods.products(i).call();
+        this.setState({
+          products: [...this.state.products, product]
+        });
+      }
     } else {
       window.alert('Marketplace contract not deployed to network.');
     }
@@ -62,6 +69,7 @@ class App extends Component {
       loading: true
     };
     this.createProduct = this.createProduct.bind(this);
+    this.purchaseProduct = this.purchaseProduct.bind(this);
   }
 
   async createProduct(name, price) {
@@ -75,6 +83,17 @@ class App extends Component {
     // });
   }
 
+  async purchaseProduct(id, price) {
+    await this.setState({ loading: true });
+    await this.state.marketplace.methods
+      .purchaseProduct(id)
+      .send({ from: this.state.account, value: price })
+      // .then(this.setState({ loading: false }));
+      .once('receipt', receipt => {
+        this.setState({ loading: false });
+      });
+  }
+
   render() {
     return (
       <div>
@@ -84,10 +103,17 @@ class App extends Component {
             <div className='col-lg-12 d-flex'>
               {this.state.loading ? (
                 <div id='loader' className='text-center'>
-                  <p className='text-center'>Loading...</p>
+                  <p className='text-center'>
+                    Loading...Please re-flesh this page once Metamask informs
+                    transaction confirmed{' '}
+                  </p>
                 </div>
               ) : (
-                <Main createProduct={this.createProduct} />
+                <Main
+                  products={this.state.products}
+                  createProduct={this.createProduct}
+                  purchaseProduct={this.purchaseProduct}
+                />
               )}
             </div>
           </div>

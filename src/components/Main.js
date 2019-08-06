@@ -57,7 +57,7 @@ class Main extends Component {
               <th scope='col' />
             </tr>
           </thead>
-          {/* <tbody id='productList'>
+          <tbody id='productList'>
             {this.props.products.map((product, key) => {
               return (
                 <tr key={key}>
@@ -90,7 +90,7 @@ class Main extends Component {
                 </tr>
               );
             })}
-          </tbody> */}
+          </tbody>
         </table>
       </div>
     );
