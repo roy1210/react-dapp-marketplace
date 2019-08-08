@@ -64,3 +64,8 @@ Be able to make transaction by Ether.
 ## Author
 
 [Shoe Kure](https://github.com/roy1210)
+
+## Ref
+
+<a href='https://kovan.etherscan.io/tx/0x4d478730b46a97f2201e1518e7bc51a26758bc77d3d0687d00157cdbdbb985e8' target='_blank' rel='noopener noreferrer'>
+Etherscan: Smart contract deploy details</a>
