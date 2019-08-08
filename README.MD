@@ -36,6 +36,7 @@ Be able to make transaction by Ether.
 
    ```console
    $ npm install
+   $ truffle test
    $ npm start
    ```
 
