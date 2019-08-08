@@ -1,4 +1,4 @@
-# react-dapp-marketplace
+# react-dApp-marketplace
 
 ## Description
 
