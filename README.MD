@@ -10,8 +10,8 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 
 ## Feature
 
-- Able to sell (add) products by Ethereum
-- Able to purchase products by Ethreum
+- Able to sell (add) products by Ether
+- Able to purchase products by Ether
 - Shows owner accounts of Metamask address
 
 ## Requirement
