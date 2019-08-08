@@ -77,10 +77,10 @@ class App extends Component {
     await this.state.marketplace.methods
       .createProduct(name, price)
       .send({ from: this.state.account })
-      .then(this.setState({ loading: false }));
-    // .once('receipt', receipt => {
-    //   this.setState({ loading: false });
-    // });
+      .once('receipt', receipt => {
+        this.setState({ loading: false });
+      });
+      // .then(this.setState({ loading: false }));
   }
 
   async purchaseProduct(id, price) {

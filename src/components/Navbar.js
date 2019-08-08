@@ -15,7 +15,7 @@ export default class Navbar extends Component {
         <ul className='navbar-nav px-3'>
           <li className='nav-item text-nowrap d-none d-sm-none d-sm-block'>
             <small className='text-white'>
-              <span id='account'>{this.props.account}</span>
+              <span id='account'>My a/c address: {this.props.account}</span>
             </small>
           </li>
         </ul>
