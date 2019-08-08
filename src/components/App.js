@@ -80,7 +80,7 @@ class App extends Component {
       .once('receipt', receipt => {
         this.setState({ loading: false });
       });
-      // .then(this.setState({ loading: false }));
+    // .then(this.setState({ loading: false }));
   }
 
   async purchaseProduct(id, price) {
@@ -102,10 +102,18 @@ class App extends Component {
           <div className='row'>
             <div className='col-lg-12 d-flex'>
               {this.state.loading ? (
-                <div id='loader' className='text-center'>
-                  <p className='text-center'>
-                    Loading...Please re-flesh this page once Metamask informs
-                    transaction confirmed{' '}
+                <div id='loader'>
+                  <div className='text-center'>
+                    <p>Loading...</p>
+                  </div>
+                  <p>
+                    When open this page at the first time => Please choose Kovan
+                    network or your own custom RPC (if using Ganache) in
+                    Metamask networks
+                  </p>
+                  <p>
+                    When transaction done => Please re-flesh this page once
+                    Metamask informs transaction confirmed
                   </p>
                 </div>
               ) : (
