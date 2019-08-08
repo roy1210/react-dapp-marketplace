@@ -2,7 +2,9 @@
 
 ## Description
 
-Marketplace dApp built with React.js, Truffle, and Ganach
+Marketplace dApp built with React, Truffle, and Ganach.
+
+Be able to make transaction by Ether.
 
 **_DEMO:_**
 
@@ -52,7 +54,7 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 - Remix (To deploy smart contract)
 - Infula (To delpoy on the Kovan test network)
 - Chai
-- React.js
+- React
 - Bootstrap
 
 ## Licence
