@@ -115,6 +115,17 @@ class App extends Component {
                     When transaction done => Please re-flesh this page once
                     Metamask informs transaction confirmed
                   </p>
+                  <p>
+                    If you don't have any Ether => You can get Ether (Kovan) by
+                    free at{' '}
+                    <a
+                      href='https://faucet.kovan.network/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Kovan faucet
+                    </a>
+                  </p>
                 </div>
               ) : (
                 <Main

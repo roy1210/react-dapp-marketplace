@@ -32,10 +32,18 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 
    Clone repo, cd into folder and run:
 
-```console
-$ npm install
-$ npm start
-```
+   ```console
+   $ npm install
+   $ npm start
+   ```
+
+3. Get Ether (Kovan network)
+
+   Able to get Ether (Kovan) by free at <a
+                     href='https://faucet.kovan.network/'
+                     target='_blank'
+                     rel='noopener noreferrer'
+                   > Kovan faucet</a>
 
 ## Tools
 
