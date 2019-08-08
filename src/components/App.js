@@ -107,13 +107,20 @@ class App extends Component {
                     <p>Loading...</p>
                   </div>
                   <p>
-                    When open this page at the first time => Please choose Kovan
-                    network or your own custom RPC (if using Ganache) in
-                    Metamask networks
+                    When open this page at the first time => Please choose
+                    `Kovan` or your own custom RPC (if using Ganache) in{' '}
+                    <a
+                      href='https://metamask.io/'
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      Metamask
+                    </a>{' '}
+                    networks.
                   </p>
                   <p>
-                    When transaction done => Please re-flesh this page once
-                    Metamask informs transaction confirmed
+                    When the transaction done => Please re-flesh this page once
+                    Metamask informs transaction confirmed.
                   </p>
                   <p>
                     If you don't have any Ether => You can get Ether (Kovan) by
@@ -125,6 +132,7 @@ class App extends Component {
                     >
                       Kovan faucet
                     </a>
+                    .
                   </p>
                 </div>
               ) : (

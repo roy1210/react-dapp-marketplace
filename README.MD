@@ -10,8 +10,8 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 
 ## Feature
 
-- Able to sell (add) products by Ether
-- Able to purchase products by Ether
+- Sell (add) products by Ether
+- Purchase products by Ether
 - Shows owner accounts of Metamask address
 
 ## Requirement
@@ -39,7 +39,7 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 
 3. Get Ether (Kovan network)
 
-   Able to get Ether (Kovan) by free at <a
+   Get Ether (Kovan) by free at <a
                      href='https://faucet.kovan.network/'
                      target='_blank'
                      rel='noopener noreferrer'
