@@ -48,11 +48,12 @@ Marketplace dApp built with React.js, Truffle, and Ganach
 ## Tools
 
 - Web3
-- Truffle
+- Truffle (To compile and migrate smart contract)
+- Remix (To deploy smart contract)
+- Infula (To delpoy on the Kovan test network)
 - Chai
 - React.js
 - Bootstrap
-- Infula (To delpoy on the Kovan test network)
 
 ## Licence
 
